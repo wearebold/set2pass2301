@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     ssr: true,
     pages: true,
     nitro: {
+      preset: 'netlify',
       prerender: {
         routes: ['/404.html']
       }
