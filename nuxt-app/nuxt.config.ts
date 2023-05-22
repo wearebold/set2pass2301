@@ -2,6 +2,7 @@ import tailwindTypography from '@tailwindcss/typography'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    ssr: true,
     pages: true,
     modules: [
         '@nuxt/content',
