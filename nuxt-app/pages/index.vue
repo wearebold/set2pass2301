@@ -3,8 +3,16 @@
 
 
         <Hero />
+        <Stats />
+        
+        <About />
 
         <Destinations />
+
+        <Steps />        
+        <Process />
+
+        
                 
         
     </div>

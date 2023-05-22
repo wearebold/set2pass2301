@@ -27,6 +27,12 @@
     /* Custom pairs */
     --space-3xl-5xl: clamp(6.00rem, calc(4.67rem + 6.67vw), 10.00rem);
     --space-3xl-4xl: clamp(6.00rem, calc(5.08rem + 4.58vw), 8.75rem);
+
+    --brand-black: #130902;
+    --brand-red: #E72628;
+    --brand-yellow: #FFC617;    
+    --brand-green: #76BF43;
+    --brand-orange: hsl(28.94, 100%, 50%);
   }
   
 @font-face {
@@ -78,9 +84,18 @@ h1 {
     margin-bottom: 1rem;
     }
 
-    a {
-        transition: all 0.2s ease-in-out;
-    }
+a {       
+    transition: all 0.2s ease-in-out;
+}
+
+.decoration-brand {
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-style: double;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    font-weight: 600;
+}
 
 .f-caps {
     @apply text-xxs;
@@ -90,20 +105,27 @@ h1 {
     text-transform: uppercase; 
 }
 
+.f-stat {
+    line-height: 0.5;
+}
+
   // Layout
   .l-container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.25rem;
+
+    &--1440 {
+        max-width: 1440px;
+    }
   }
 
   // Site
 
   // Header
   .site-header {
-    .l-container {
-        max-width: 1440px;
-    }
+    // background-color: #130902;
+    // border-bottom: 1px solid white;
   }
 
   // Footer
@@ -171,9 +193,24 @@ h1 {
         }
     }
 
+    &--orange {
+        background-color: hsl(28.94, 100%, 50%);        
+    }
+
     &--light {
         background-color: #fff;
         color: #130902;
+
+        &:before {
+            background-color: orange;
+        }
+        &:hover,
+        &:focus {    
+            color: #130902;
+            &:before {
+                transform: translateX(0);
+            }
+        }
     }
     
   }

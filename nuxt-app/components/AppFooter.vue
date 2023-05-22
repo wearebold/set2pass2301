@@ -4,10 +4,10 @@
             <div>
                 <nuxt-link to="/" rel="home">
                 <img
-                    src="/svg/logo-mark-colour.svg"
+                    src="/svg/logo-white.svg"
                     alt="Set To Pass - Driving School Logo"
-                    width="32"
-                    height="35"
+                    width="220"
+                    loading="lazy"
                 />
                 </nuxt-link>
             </div>
@@ -55,7 +55,7 @@
                     </li>
                 </ul></div>
         </div>
-        <div class="w-full h-px bg-orange-500 mt-8"></div>
+        <div class="w-full h-px bg-white mt-8"></div>
         <div class="l-container">
             <small class="block py-8">&copy; 2023 Set to pass. All rights reserved.</small>
         </div>
