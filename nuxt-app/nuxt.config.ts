@@ -4,6 +4,11 @@ import tailwindTypography from '@tailwindcss/typography'
 export default defineNuxtConfig({
     ssr: true,
     pages: true,
+    nitro: {
+      prerender: {
+        routes: ['/404.html']
+      }
+   },
     modules: [
         '@nuxt/content',
         '@nuxtjs/tailwindcss'
