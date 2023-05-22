@@ -2,14 +2,19 @@ import tailwindTypography from '@tailwindcss/typography'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: true,
+    // ssr: true,
     pages: true,
+    // router: {
+    //   options: {
+    //     strict: true,
+    //   },
+    // },
     nitro: {
-      preset: 'netlify',
+      preset: 'netlify', 
       prerender: {
-        routes: ['/404.html']
-      }
-   },
+        crawlLinks: true
+      }     
+   },  
     modules: [
         '@nuxt/content',
         '@nuxtjs/tailwindcss'

@@ -11,6 +11,10 @@ node_modules
 .nuxt
 nuxt.d.ts
 .output
+.nitro
+.cache
+.env
+dist
 
 # User-specific files
 *.rsuser
