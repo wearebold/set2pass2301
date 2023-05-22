@@ -4,6 +4,15 @@
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
 # User-specific files
+node_modules
+*.log
+
+# Nuxt.js
+.nuxt
+nuxt.d.ts
+.output
+
+# User-specific files
 *.rsuser
 *.suo
 *.user

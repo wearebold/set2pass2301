@@ -1,0 +1,191 @@
+/* @link https://utopia.fyi/space/calculator?c=320,16,1.125,1280,20,1.25,6,3,&s=0.75|0.5|0.25,1.5|2|3|4|6|7|8,3xl-5xl&g=s,l,xl,12 */
+:root {
+    --space-3xs: clamp(0.25rem, calc(0.23rem + 0.10vw), 0.31rem);
+    --space-2xs: clamp(0.50rem, calc(0.46rem + 0.21vw), 0.63rem);
+    --space-xs: clamp(0.75rem, calc(0.69rem + 0.31vw), 0.94rem);
+    --space-s: clamp(1.00rem, calc(0.92rem + 0.42vw), 1.25rem);
+    --space-m: clamp(1.50rem, calc(1.38rem + 0.63vw), 1.88rem);
+    --space-l: clamp(2.00rem, calc(1.83rem + 0.83vw), 2.50rem);
+    --space-xl: clamp(3.00rem, calc(2.75rem + 1.25vw), 3.75rem);
+    --space-2xl: clamp(4.00rem, calc(3.67rem + 1.67vw), 5.00rem);
+    --space-3xl: clamp(6.00rem, calc(5.50rem + 2.50vw), 7.50rem);
+    --space-4xl: clamp(7.00rem, calc(6.42rem + 2.92vw), 8.75rem);
+    --space-5xl: clamp(8.00rem, calc(7.33rem + 3.33vw), 10.00rem);
+  
+    /* One-up pairs */
+    --space-3xs-2xs: clamp(0.25rem, calc(0.13rem + 0.63vw), 0.63rem);
+    --space-2xs-xs: clamp(0.50rem, calc(0.35rem + 0.73vw), 0.94rem);
+    --space-xs-s: clamp(0.75rem, calc(0.58rem + 0.83vw), 1.25rem);
+    --space-s-m: clamp(1.00rem, calc(0.71rem + 1.46vw), 1.88rem);
+    --space-m-l: clamp(1.50rem, calc(1.17rem + 1.67vw), 2.50rem);
+    --space-l-xl: clamp(2.00rem, calc(1.42rem + 2.92vw), 3.75rem);
+    --space-xl-2xl: clamp(3.00rem, calc(2.33rem + 3.33vw), 5.00rem);
+    --space-2xl-3xl: clamp(4.00rem, calc(2.83rem + 5.83vw), 7.50rem);
+    --space-3xl-4xl: clamp(6.00rem, calc(5.08rem + 4.58vw), 8.75rem);
+    --space-4xl-5xl: clamp(7.00rem, calc(6.00rem + 5.00vw), 10.00rem);
+  
+    /* Custom pairs */
+    --space-3xl-5xl: clamp(6.00rem, calc(4.67rem + 6.67vw), 10.00rem);
+    --space-3xl-4xl: clamp(6.00rem, calc(5.08rem + 4.58vw), 8.75rem);
+  }
+  
+@font-face {
+    font-family: "Satoshi";
+    src: url("/fonts/Satoshi.ttf") format("ttf-variations");
+    font-weight: 125 950;
+    font-stretch: 75% 125%;
+    font-style: normal;
+  }
+
+html {
+    font-size: 100%;
+}
+
+body,
+html {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 400;
+    color: #200F03;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;   
+}
+
+h1,h2,h3,h4,h5,h6 {    
+    font-family: termina, sans-serif;
+    font-weight: 500;
+    margin: 3rem 0 1.38rem;
+    text-wrap: balance;
+    line-height: 1.1;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+  }
+  
+  h2 {font-size: 2.441rem;}
+  
+  h3 {font-size: 1.953rem;}
+  
+  h4 {font-size: 1.563rem;}
+  
+  h5 {font-size: 1.25rem;}
+  
+  small, .text_small {font-size: 0.8rem;}
+
+  p {
+    margin-bottom: 1rem;
+    }
+
+    a {
+        transition: all 0.2s ease-in-out;
+    }
+
+.f-caps {
+    @apply text-xxs;
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1rem;  
+    text-transform: uppercase; 
+}
+
+  // Layout
+  .l-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  // Site
+
+  // Header
+  .site-header {
+    .l-container {
+        max-width: 1440px;
+    }
+  }
+
+  // Footer
+  .site-footer {
+    background-color: #130902;
+    color:#fff;
+
+    h2 {
+        @apply text-xs;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    ul li {
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+    
+    a {
+        @apply text-sm;
+
+        &:hover,
+        &:focus {
+            color:rgba(246, 111, 37, 0.8);
+            color: oklch(0.73 0.22 42.13);
+        }
+    }
+  }
+
+  // Comp
+  .c-btn {
+    font-family: termina, sans-serif;
+    display: inline-block;
+    background-color: #130902;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: all 0.2s ease-in-out;
+    line-height: 1;
+    @apply text-xxs;
+    overflow: hidden;
+
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0; 
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s ease-in-out;
+        transform: translateX(-100%);
+        background-color: #FFF;
+    }
+
+    &:hover,
+    &:focus {    
+        color: #130902;
+        &:before {
+            transform: translateX(0);
+        }
+    }
+
+    &--light {
+        background-color: #fff;
+        color: #130902;
+    }
+    
+  }
+
+
+
+  // Utils
+  .h-100svh {
+    height: 100vh;    
+    height: 100svh;
+  }
+
+  .whitespace-balance {
+    text-wrap: balance;
+  }
