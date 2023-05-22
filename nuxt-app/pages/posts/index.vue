@@ -1,4 +1,7 @@
-<script setup>
+<template>
+  <div>Posts</div>
+</template>
+<!-- <script setup>
   const { data: posts } = await useFetch('https://jsonplaceholder.typicode.com/posts')
 </script>
 
@@ -12,4 +15,4 @@
     </article>
     </div>
   </template>
-  
+   -->

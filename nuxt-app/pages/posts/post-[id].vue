@@ -1,4 +1,7 @@
-<script setup>
+<template>
+  <div>Post-id</div>
+</template>
+<!-- <script setup>
 const { id } = useRoute().params
  const { data: post } = await useFetch(`https://jsonplaceholder.typicode.com/posts/${id}`, { pick: ['title', 'body'] })
 </script>
@@ -11,4 +14,4 @@ const { id } = useRoute().params
     </article>
     </div>
   </template>
-  
+   -->
