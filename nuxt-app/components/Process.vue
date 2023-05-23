@@ -2,7 +2,7 @@
 
     <article class="c-about" style="padding-top: var(--space-3xl-5xl); padding-bottom: var(--space-3xl-5xl);">
         <div class="l-container">
-            <h2 class="font-display text-h2 mt-0 mb-8">Our Process</h2>
+            <h2 class="font-display text-h2 mt-0 mb-8" style="margin-bottom: var(--space-xl);">Our Process</h2>
             <div class="grid gap-6 grid-cols-1 md:grid-cols-3 md:gap-12">                        
              <div>
                 <p class="max-w-prose whitespace-balance">Explore our services, instructors, and testimonials to understand what Set to Pass offers.</p>

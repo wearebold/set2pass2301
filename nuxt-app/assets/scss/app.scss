@@ -157,11 +157,14 @@ a {
 
   :where(.c-btn)  {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   // Comp
   .c-btn {
     font-family: termina, sans-serif;
     background-color: #130902;
+    border: 1px solid #130902;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -196,7 +199,13 @@ a {
     }
 
     &--orange {
-        background-color: hsl(28.94, 100%, 50%);        
+        background-color: hsl(28.94, 100%, 50%);    
+        border-color: hsl(28.94, 100%, 50%);    
+
+        &:hover,
+        &:focus {    
+            border-color: #130902;    
+        }
     }
 
     &--light {

@@ -18,7 +18,7 @@
       </div>
       <div class="site-nav">
       <nav ref="siteNav"  class="c-nav c-nav--primary | inline-flex ml-auto font-display" data-target-site-nav id="a11y-nav-primary">
-        <nuxt-link to="/about" class="text-xs mx-4">About</nuxt-link>
+        <nuxt-link to="/about" class="text-xs mx-4">About Us</nuxt-link>
         <nuxt-link to="/stories" class="text-xs mx-4">Stories</nuxt-link>
         <nuxt-link to="/pricing" class="text-xs mx-4">Pricing</nuxt-link>
         <nuxt-link to="/faqs" class="text-xs mx-4">FAQ's</nuxt-link>
