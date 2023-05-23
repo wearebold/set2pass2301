@@ -7,8 +7,8 @@
 
             <!-- <img  class="mx-auto" src="~/assets/img/icon-road-cars.svg" alt="" width="450" loading="lazy" style="margin-top: var(--space-2xl);"/> -->
 
-            <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
-                <section class="w-full max-w-sm p-4 bg-white border border-black shadow sm:p-8 " style="margin-top: var(--space-2xl); margin-bottom: var(--space-2xl);">
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-3" style="margin-top: var(--space-2xl); margin-bottom: var(--space-2xl);">
+                <section class="w-full max-w-sm mx-auto p-4 bg-white border border-black shadow sm:p-8">
                     <h5 class="mb-4 text-xl font-display mt-6">Single driving lesson</h5>
                     <div class="flex items-baseline text-gray-900 dark:text-white">
                         <span class="text-3xl font-display">£</span>
@@ -26,7 +26,7 @@
                     <nuxt-link to="/contact" class="c-btn c-btn--primary c-btn--orange | py-5 px-5 mt-4 ml-auto w-full" style="margin-top: var(--space-xl);"><span class="relative z-1">Choose plan</span></nuxt-link>
                 </section>
 
-                <section class="w-full max-w-sm p-4 bg-white border border-black shadow sm:p-8 " style="margin-top: var(--space-2xl); margin-bottom: var(--space-2xl);">
+                <section class="w-full max-w-sm mx-auto p-4 bg-white border border-black shadow sm:p-8">
                     <h5 class="mb-4 text-xl font-display mt-6">10 driving lessons</h5>
                     <div class="flex items-baseline text-gray-900 dark:text-white">
                         <span class="text-3xl font-display">£</span>
@@ -44,7 +44,7 @@
                     <nuxt-link to="/contact" class="c-btn c-btn--primary c-btn--orange | py-5 px-5 mt-4 ml-auto w-full" style="margin-top: var(--space-xl);"><span class="relative z-1">Choose plan</span></nuxt-link>
                 </section>
 
-                <section class="w-full max-w-sm p-4 bg-white border border-black shadow sm:p-8 " style="margin-top: var(--space-2xl); margin-bottom: var(--space-2xl);">
+                <section class="w-full max-w-sm mx-auto p-4 bg-white border border-black shadow sm:p-8 ">
                     <h5 class="mb-4 text-xl font-display mt-6">Intensive driving course</h5>
                     <div class="flex items-baseline text-gray-900 dark:text-white">
                         <span class="text-3xl font-display">£</span>
