@@ -2,11 +2,11 @@
     <article class="c-hero flex flex-col justify-center pt-14">
         <div class="l-container grid gap-12 items-end grid-cols-1 md:grid-cols-2">
             <div>
-                <h1 class="font-display text-h2">
+                <h1 class="font-display text-h1">
                     Start learning today<span aria-hidden="true">...</span> 
                     <span class="sr-only">with Set To Pass Driving school</span>
                 </h1>
-                <p class="text-base max-w-prose whitespace-balance">We are an independent driving school based in Shrewsbury and the surrounding area. Providing driving lessons and intensive courses in a dual-controlled manual car.</p>
+                <p class="max-w-prose whitespace-balance md:text-h5">We are an independent driving school based in Shrewsbury and the surrounding area. Providing driving lessons and intensive courses in a dual-controlled manual car.</p>
                 <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-2 ml-auto"><span class="relative z-1">Get In Touch</span></nuxt-link>
             </div>
             <div class="order-first md:order-last">
