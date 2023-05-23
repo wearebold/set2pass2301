@@ -32,7 +32,7 @@
           <div>
             <h2 class="f-stat m-0">
               <span class="text-h5 block">2k+</span>
-              <span class="font-body text-sm">trained students</span>
+              <span class="font-body text-sm text-gray-500">Trained students</span>
             </h2>
           </div>
         </div>
@@ -41,7 +41,7 @@
         >
           <h2 class="f-stat m-0">
             <span class="text-h5 block">10yr+</span>
-            <span class="font-body text-sm">experience</span>
+            <span class="font-body text-sm text-gray-500">Experience</span>
           </h2>
         </div>
         <div
@@ -49,7 +49,7 @@
         >
           <h2 class="f-stat m-0">
             <span class="text-h5 block">97%</span>
-            <span class="font-body text-sm">pass 1st time</span>
+            <span class="font-body text-sm text-gray-500">Passed 1st time</span>
           </h2>
         </div>
         <div
@@ -85,7 +85,7 @@
           <div>
             <h2 class="f-stat m-0">
               <span class="text-h5 block">38+</span>
-              <span class="font-body text-sm">5 star reviews</span>
+              <span class="font-body text-sm text-gray-500">5 star reviews</span>
             </h2>
           </div>
         </div>

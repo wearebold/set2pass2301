@@ -155,10 +155,12 @@ a {
     }
   }
 
+  :where(.c-btn)  {
+    display: inline-flex;
+  }
   // Comp
   .c-btn {
     font-family: termina, sans-serif;
-    display: inline-block;
     background-color: #130902;
     color: #fff;
     text-decoration: none;

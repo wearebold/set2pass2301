@@ -15,6 +15,9 @@ export default defineNuxtConfig({
         crawlLinks: true
       }     
    },  
+   build: {
+    transpile: ['gsap'],
+   },
     modules: [
         '@nuxt/content',
         '@nuxtjs/tailwindcss'

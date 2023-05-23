@@ -17,6 +17,7 @@
 </template>
 <style scoped lang="scss">
 .c-hero {
+    min-height: fit-content;
     height: 90vh;
     height: 90svh;
     // background-color: black;

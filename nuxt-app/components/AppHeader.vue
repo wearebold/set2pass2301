@@ -16,22 +16,214 @@
                 </svg>
         </nuxt-link>
       </div>
-      <nav class="inline-flex ml-auto font-display">
+      <div class="site-nav">
+      <nav ref="siteNav"  class="c-nav c-nav--primary | inline-flex ml-auto font-display" data-target-site-nav id="a11y-nav-primary">
         <nuxt-link to="/about" class="text-xs mx-4">About</nuxt-link>
         <nuxt-link to="/stories" class="text-xs mx-4">Stories</nuxt-link>
         <nuxt-link to="/pricing" class="text-xs mx-4">Pricing</nuxt-link>
         <nuxt-link to="/faqs" class="text-xs mx-4">FAQ's</nuxt-link>
+        <nuxt-link to="/contact" class="text-xs mx-4 | md:hidden">Contact</nuxt-link>
 
         <!-- <nuxt-link to="/posts">Posts</nuxt-link>  -->
       </nav>
+      </div>      
 
-      <nuxt-link to="/contact" class="c-btn c-btn--primary | py-5 px-5 ml-auto"><span class="relative z-1">Contact</span></nuxt-link>
+      <nuxt-link to="/contact" class="c-btn c-btn--primary | py-5 px-5 hidden | md:inline-flex"><span class="relative z-1">Contact</span></nuxt-link>
+
+      <button ref="btnToggle" @click="_onTogglerClick" aria-expanded="false" aria-controls="a11y-nav-primary" class="flex flex-row items-center ml-auto relative z-2 | md:hidden"> 
+          <span class="f-caps text-xs mr-8" ref="btnToggleLabel">Menu</span>
+            <svg class="site-nav__icon" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 40 22" width="25" height="16">
+                <path class="site-nav__bar bar--t" d="M38,4H2C0.9,4,0,3.1,0,2s0.9-2,2-2h36c1.1,0,2,0.9,2,2S39.1,4,38,4z"/>
+                <path class="site-nav__bar bar--m" d="M38,13H2c-1.1,0-2-0.9-2-2s0.9-2,2-2h36c1.1,0,2,0.9,2,2S39.1,13,38,13z"/>
+                <path class="site-nav__bar bar--b" d="M38,22H2c-1.1,0-2-0.9-2-2s0.9-2,2-2h36c1.1,0,2,0.9,2,2S39.1,22,38,22z"/>
+            </svg>
+        </button>
+
+        <div ref="siteNavBg" data-target-site-nav-bg class="site-nav__bg | md:hidden"></div>
+
     </div>
   </header>
 </template>
 
+<script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
+import gsap from 'gsap';
+
+const siteNav = ref();
+const btnToggle = ref();
+const btnToggleLabel = ref();
+
+const _onTogglerClick = ( e ) =>
+  {
+    e.preventDefault();
+    const menuIsOpen = document.querySelector( "body" ).classList.contains( "s-menu-open" );
+    if ( !menuIsOpen )
+    {
+      openMenu();      
+    }
+    else
+    {
+      closeMenu();
+    }
+  }
+
+  const openMenu = () =>
+  {
+    console.log(siteNav.value);
+    const tlOpen = new gsap.timeline( {
+      defaults: { duration: 0.3, ease: "power1.inOut" },
+      onStart: () =>
+      {
+        document.querySelector( "body" ).classList.add( "s-menu-open" );       
+        btnToggle.value.setAttribute( 'aria-expanded', 'true' );
+        btnToggleLabel.textContent = "Close";
+        // firstMenuItem.focus();
+        // window.scroll( 0, 0 );
+      }
+    } )
+    tlOpen.set( siteNav.value, { autoAlpha: 1 } )
+      .to( siteNav.value, { xPercent: 0 } )
+  }
+  const closeMenu = () =>
+  {
+    const tlClose = new gsap.timeline( {
+      defaults: { duration: 0.3, ease: "power1.inOut" },
+      onStart: () =>
+      {
+        document.querySelector( "body" ).classList.remove( "s-menu-open" );
+        btnToggle.value.setAttribute( 'aria-expanded', 'false' );
+        btnToggleLabel.textContent = "Menu";
+      }
+    } )
+    tlClose.to( siteNav.value, { xPercent: '-100' } )
+      .set( siteNav.value, { autoAlpha: 0, delay: 0.2 } )
+  }  
+onMounted(() => {
+    
+    const mql = window.matchMedia( '(max-width: 768px)' );
+    
+    const _state = () =>
+  {
+    if ( mql.matches )
+    {
+      gsap.set( siteNav.value, { autoAlpha: 0, xPercent: '-100' } );
+    } else
+    {
+      gsap.set( siteNav.value, { clearProps: 'all' } );
+      document.querySelector( "body" ).classList.remove( "s-menu-open" );
+      btnToggle.value.setAttribute( 'aria-expanded', 'false' );
+    }
+    }
+
+    _state();
+    
+//   ctx = gsap.context((self) => {
+//     const boxes = self.selector('.box');
+//     tl.value = gsap
+//       .timeline()
+//       .to(boxes[0], { x: 120, rotation: 360 })
+//       .to(boxes[1], { x: -120, rotation: -360 }, '<')
+//       .to(boxes[2], { y: -166 })
+//       .reverse();
+//   }, main.value); // <- Scope!
+
+if (mql.addEventListener) {
+    mql.addEventListener(`change`,_state)
+} else {
+    // Deprecated 'MediaQueryList' API, <Safari 14, IE, <Edge 16
+    mql.addListener(_state);
+}
+});
+
+onUnmounted(() => {
+    // ctx.revert(); // <- Easy Cleanup!
+});
+</script>
+
 <style scoped lang="scss">
-// nav a {
-//     color: white;
-// }
+
+// - SITE 
+// - HEADER
+.site-header {
+  transition: all 0.4s ease;
+  z-index: 10;
+
+  .s-menu-open & {
+    color: orange;
+  }
+
+  &.s-active {
+    background-color: white;
+    box-shadow:  0px 21.6px 14.3px rgba(0, 0, 0, 0.025),  0px 36px 99px rgba(0, 0, 0, 0.08);
+  }
+}
+
+// - NAV
+.site-nav {    
+    // - ICON
+    &__bar {
+
+    transition: all 0.6s ease-in-out;
+
+        .s-menu-open & {
+            &.bar--t {
+            transform: translate(-5px, 7px) rotate(33deg);
+            transform-origin: center;
+            }
+
+            &.bar--m {
+            opacity: 0;
+            transition: none;
+            }
+
+            &.bar--b {
+            transform: translate(-4px, -8px) rotate(-33deg);
+            transform-origin: center;
+            }
+        }
+    }   
+}
+
+// - NAV
+.c-nav--primary {
+
+    // until md
+    @media (max-width: 47.99em) {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #000;
+    width: 100vw;
+    // width: calc(100vw - 122px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+
+    padding-left: 1.25rem;
+    
+
+    a {
+        font-size: clamp(1.5rem, 1.136rem + 1.82vw, 2.5rem);
+        font-family:  var(--font-body);
+        font-weight: 500;
+        color: white;
+
+        &:hover,
+        &:focus {
+        color: orange;
+        }
+    }
+    }
+
+    // from - md
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+    }
+} 
 </style>
