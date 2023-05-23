@@ -11,7 +11,7 @@
               <p class="max-w-prose whitespace-balance">So why choose Set to Pass? We have a proven track record of success, with a high pass rate and many satisfied customers. We are committed to providing you with the best possible learning experience and helping you achieve your driving goals. With Set to Pass, you can be confident that you are safe.</p>
 
               <p class="max-w-prose whitespace-balance">Contact us today to book your first lesson and start your journey to becoming a safe and confident driver. We look forward to hearing from you!</p>
-              <nuxt-link to="/contact" class="c-btn c-btn--primary | py-5 px-5 mt-4" style="margin-top: var(--space-xl);"><span class="relative z-1">Start Your journey</span></nuxt-link>
+              <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-4" style="margin-top: var(--space-xl);"><span class="relative z-1">Start Your journey</span></nuxt-link>
            </div>   
           <div class="">
                             

@@ -135,7 +135,7 @@
 
               <button
                 type="submit"
-                class="c-btn c-btn--primary | py-5 px-5 mt-8"
+                class="c-btn c-btn--primary |  mt-8"
               >
                 <span class="relative z-1">Send</span>
               </button>

@@ -88,6 +88,13 @@ a {
     transition: color 0.2s ease-in-out;
 }
 
+details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
 .decoration-brand {
     text-decoration: underline;
     text-decoration-color: currentColor;
@@ -106,7 +113,11 @@ a {
 }
 
 .f-stat {
-    line-height: 0.5;
+    line-height: 0.3;
+
+    @media (min-width: 768px) {
+        line-height: 0.5;
+    }
 }
 
   // Layout
@@ -159,6 +170,11 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem 1.25rem;
+
+    @media (min-width: 768px) {
+        padding: 1.25rem 1.5rem;
+    }
   }
   // Comp
   .c-btn {
@@ -170,9 +186,9 @@ a {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    transition: all 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
     line-height: 1;
-    @apply text-xxs;
+    font-size: clamp(0.5rem, 0.457rem + 0.22vw, 0.625rem);
     overflow: hidden;
 
     position: relative;

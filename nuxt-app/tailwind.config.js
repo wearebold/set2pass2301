@@ -36,7 +36,7 @@ export default {
             'h3': 'clamp(1.42rem, calc(1.07rem + 1.77vw), 2.44rem)', // 3
             'h4': 'clamp(1.27rem, calc(1.03rem + 1.20vw), 1.95rem)', // 2
             'h5': 'clamp(1.13rem, calc(0.97rem + 0.76vw), 1.56rem)', // 1
-            'base': 'clamp(1.00rem, calc(0.91rem + 0.43vw), 1.25rem)', // 0
+            'base': 'clamp(0.89rem, calc(0.85rem + 0.19vw), 1.00rem);', // 0
             'sm': 'clamp(0.89rem, calc(0.85rem + 0.19vw), 1.00rem)', // -1
             'xs': 'clamp(0.79rem, calc(0.79rem + 0.02vw), 0.80rem)', // -2
             'xxs': 'clamp(0.64rem, calc(0.72rem + -0.11vw), 0.70rem)' // -3

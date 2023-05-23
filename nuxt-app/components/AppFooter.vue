@@ -1,12 +1,12 @@
 <template>
     <footer class="site-footer" style="padding-top: var(--space-2xl);">
-        <div class="l-container grid grid-cols-2 md:grid-cols-4">
+        <div class="l-container grid grid-cols-1 gap-12 md:grid-cols-4">
             <div>
                 <nuxt-link to="/" rel="home">
                 <img
                     src="/svg/logo-white.svg"
                     alt="Set To Pass - Driving School Logo"
-                    width="220"
+                    width="160"
                     loading="lazy"
                 />
                 </nuxt-link>
@@ -28,7 +28,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="">
                 <h2 class="f-caps">SOCIAL</h2>
                 <ul>
                     <li>

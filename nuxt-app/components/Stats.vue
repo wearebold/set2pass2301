@@ -2,12 +2,12 @@
   <article class="c-stats border-y border-black">
     <div class="l-container l-container--1440 | h-full">
       <div
-        class="grid gap-px grid-cols-4 justify-center justify-items-center items-center bg-black h-full"
+        class="grid gap-px grid-cols-1 justify-center justify-items-center items-center bg-black h-full sm:grid-cols-2 lg:grid-cols-4"
       >
         <div
-          class="flex flex-col justify-center items-center gap-6 px-4 bg-white h-full w-full | md:flex-row"
+          class="c-stat__item flex flex-row justify-center items-center gap-6 bg-white h-full w-full "
         >
-          <div class="-space-x-4 hidden lg:flex">
+          <div class="-space-x-4 flex">
             <img
               class="w-10 h-10 bg-white border border-black rounded-full"
               src="~/assets/img/icon-avatar_01.svg"
@@ -24,38 +24,38 @@
               alt=""
             />
             <img
-              class="w-10 h-10 bg-white border border-black rounded-full hidden | xl:block"
+              class="w-10 h-10 bg-white border border-black rounded-full"
               src="~/assets/img/icon-avatar_03.svg"
               alt=""
             />
           </div>
           <div>
             <h2 class="f-stat m-0">
-              <span class="text-base block | md:text-h5">2k+</span>
-              <span class="font-body text-xxs text-gray-500 | md:text-sm">Trained students</span>
+              <span class="text-h5 block">2k+</span>
+              <span class="font-body text-xs text-gray-500 | md:text-sm">Trained students</span>
             </h2>
           </div>
         </div>
         <div
-          class="flex justify-center items-center px-4 bg-white h-full w-full"
+          class="c-stat__item justify-center items-center px-2 bg-white h-full w-full hidden lg:flex"
         >
           <h2 class="f-stat m-0">
             <span class="text-base block | md:text-h5">10yr+</span>
-            <span class="font-body text-xxs text-gray-500 | md:text-sm">Experience</span>
+            <span class="font-body text-xs text-gray-500 | md:text-sm">Experience</span>
           </h2>
         </div>
         <div
-          class="flex justify-center items-center px-4 bg-white h-full w-full"
+          class="c-stat__item  justify-center items-center px-2 bg-white h-full w-full hidden lg:flex"
         >
           <h2 class="f-stat m-0">
             <span class="text-base block | md:text-h5">97%</span>
-            <span class="font-body text-xxs text-gray-500 | md:text-sm">Passed 1st time</span>
+            <span class="font-body text-xs text-gray-500 | md:text-sm">Passed 1st time</span>
           </h2>
         </div>
         <div
-          class="flex flex-col justify-center items-center gap-6 px-4 bg-white h-full w-full md:flex-row-reverse"
+          class="c-stat__item  flex flex-row justify-center items-center gap-6 bg-white h-full w-full"
         >
-          <div class="hidden xl:flex">
+          <div class="flex">
             <img
               class="w-6 h-6 rounded-full"
               src="~/assets/img/icon-star.svg"
@@ -84,8 +84,8 @@
           </div>
           <div>
             <h2 class="f-stat m-0">
-              <span class="text-base block | md:text-h5">38+</span>
-              <span class="font-body text-xxs text-gray-500 | md:text-sm">5 star reviews</span>
+              <span class="text-h5 block">38+</span>
+              <span class="font-body text-xs text-gray-500 | md:text-sm">5 star reviews</span>
             </h2>
           </div>
         </div>
@@ -100,10 +100,14 @@
 
 <style lang="scss" scoped>
 .c-stats {
-    height: 10vh;
-    height: 10svh;
+    // height: 20vh;
+    // height: 20svh;
     .l-container {
         padding: 0;
     }
+}
+
+.c-stat__item {
+    min-height: 10svh;
 }
 </style>

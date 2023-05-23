@@ -74,7 +74,7 @@
 
       <nuxt-link
         to="/contact"
-        class="c-btn c-btn--primary | py-5 px-5 hidden | md:inline-flex"
+        class="c-btn c-btn--primary |  hidden | md:inline-flex"
         ><span class="relative z-1">Contact</span></nuxt-link
       >
 
@@ -85,7 +85,7 @@
         aria-controls="a11y-nav-primary"
         class="flex flex-row items-center ml-auto relative z-2 | md:hidden"
       >
-        <span class="f-caps text-xs mr-8" ref="btnToggleLabel">Menu</span>
+        <span class="f-caps text-xs mr-4" ref="btnToggleLabel">Menu</span>
         <svg
           class="site-nav__icon"
           aria-hidden="true"
@@ -297,7 +297,7 @@ onUnmounted(() => {
 }
 
 .site-brand {
-  max-width: 150px;
+  max-width: 160px;
   width: 100%;
   @media (min-width: 1280px) {
     max-width: 200px;

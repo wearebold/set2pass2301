@@ -2,7 +2,7 @@
     <div>
     <article class="c-about" style="padding-top: var(--space-3xl-5xl); padding-bottom: var(--space-3xl-5xl);">
         <div class="l-container">
-            <h2 class="font-display text-h2 mt-0 mb-8">About Us</h2>
+            <h2 class="font-display text-h2 mt-0">About Us</h2>
             <div class="grid gap-12 grid-cols-1 md:grid-cols-2">
             
             <div>                
@@ -10,7 +10,7 @@
                 <p class="max-w-prose mx-auto whitespace-balance">Our team of experienced instructors will provide you with the skills and knowledge you need to navigate the roads quickly.</p>
                 <p class="max-w-prose mx-auto whitespace-balance">We offer a range of courses to suit every need, from intensive driving courses to refresher lessons for experienced drivers. Our classes are tailored to your needs, so you can learn at your own pace and achieve your goals.</p>
                 <!-- <p class="text-base max-w-prose mx-auto whitespace-balance">Contact us today to book your first lesson and start your journey to becoming a safe and confident driver. We look forward to hearing from you!</p> -->
-                <nuxt-link to="/about" class="c-btn c-btn--primary | py-5 px-5 mt-4 ml-auto" style="margin-top: var(--space-xl);"><span class="relative z-1">Find out more</span></nuxt-link>
+                <nuxt-link to="/about" class="c-btn c-btn--primary | mt-2"><span class="relative z-1">Find out more</span></nuxt-link>
             </div>
             <div class="">
                 

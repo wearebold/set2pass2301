@@ -21,7 +21,7 @@
             <div>                
                 <p class="max-w-prose whitespace-balance">After you have contacted us, our team will promptly respond to your inquiry. We will provide you with further details, answer your questions, and discuss available options that align with your requirements. This will include scheduling your first driving lesson, providing information on course availability, and discussing any specific preferences you may have.</p>
                 <p class="max-w-prose whitespace-balance">Once everything is set and confirmed, you're ready to go! You'll be on your way to becoming a confident and skilled driver with Set to Pass.</p>
-                <nuxt-link to="/about" class="c-btn c-btn--primary | py-5 px-5 mt-4 ml-auto" style="margin-top: var(--space-xl);"><span class="relative z-1">Start Your journey</span></nuxt-link>
+                <nuxt-link to="/about" class="c-btn c-btn--primary |  mt-4 ml-auto" style="margin-top: var(--space-xl);"><span class="relative z-1">Start Your journey</span></nuxt-link>
             </div>
             </div>
         </div>

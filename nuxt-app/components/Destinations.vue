@@ -18,7 +18,7 @@
                 <li class="font-semibold">Shrewsbury</li>
                 <li>Wem</li>
             </ul>
-            <nuxt-link to="/contact" class="c-btn c-btn--primary | py-5 px-5 mt-4 ml-auto" style="margin-top: var(--space-xl);"><span class="relative z-1">Get In Touch</span></nuxt-link>
+            <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-4 ml-auto" style="margin-top: var(--space-xl);"><span class="relative z-1">Get In Touch</span></nuxt-link>
         </div>
     </article>
 </template>
