@@ -11,7 +11,7 @@
         <h1 class="font-display text-h2 mt-0 mb-8">Contact Us</h1>
         <div class="grid gap-6 grid-cols-1 md:grid-cols-2 md:gap-12">
           <div>
-            <p class="text-base max-w-prose whitespace-balance">
+            <p class="text-h5 max-w-prose whitespace-balance">
               We're excited to hear from you and assist you in any way we can.
               Whether you have a question, need more information, or want to
               book your first driving lesson, our team is ready to help.

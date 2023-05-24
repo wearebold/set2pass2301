@@ -3,7 +3,7 @@
         <div class="l-container">
             <div class="relative">                                
             <h2 class="font-display text-h2 mt-0 mb-8">Our destinations</h2>
-            <p class="text-base max-w-prose mx-auto whitespace-balance">If you're looking for a reliable and experienced driving instructor in and around Shrewsbury, Shropshire, look no further.</p>
+            <p class="text-h5 max-w-prose mx-auto whitespace-balance">If you're looking for a reliable and experienced driving instructor in and around Shrewsbury, Shropshire, look no further.</p>
             </div>
 
 

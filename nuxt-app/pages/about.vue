@@ -5,7 +5,7 @@
           <h1 class="font-display text-h2 mt-0 mb-8">About Us</h1>
           <div class="grid gap-6 grid-cols-1 md:grid-cols-2 md:gap-12">                        
            <div>
-              <p class="text-base max-w-prose whitespace-balance">At Set to Pass, we understand that learning to drive can be a daunting experience. That's why we provide a friendly and supportive learning environment where you can feel comfortable and confident behind the wheel.</p>
+              <p class="text-h5 max-w-prose whitespace-balance">At Set to Pass, we understand that learning to drive can be a daunting experience. That's why we provide a friendly and supportive learning environment where you can feel comfortable and confident behind the wheel.</p>
               <p class="max-w-prose whitespace-balance">Our instructors are patient and understanding and will help you gradually build your confidence and skills to become a safe and competent driver.</p>
               <p class="max-w-prose whitespace-balance">We also understand the importance of affordability, so we offer competitive prices for all our courses. Everyone should have access to high-quality driving lessons, regardless of their budget.</p>
               <p class="max-w-prose whitespace-balance">So why choose Set to Pass? We have a proven track record of success, with a high pass rate and many satisfied customers. We are committed to providing you with the best possible learning experience and helping you achieve your driving goals. With Set to Pass, you can be confident that you are safe.</p>

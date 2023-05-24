@@ -6,7 +6,7 @@
     <div class="l-container">
     <div class="text-center">
       <h1 class="font-display text-h2 mt-0 mb-8">FAQ's</h1>
-      <p class="text-base max-w-prose mx-auto whitespace-balance">
+      <p class="text-h5 max-w-prose mx-auto whitespace-balance">
         We understand that you may have questions about our driving school and the services we offer. That's why we have compiled this page to address some of the most common inquiries we receive from our valued customers.
       </p>
       </div>

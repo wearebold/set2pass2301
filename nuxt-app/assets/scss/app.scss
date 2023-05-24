@@ -109,6 +109,10 @@ details > summary {
     display: none;
   }
 
+  button, input, optgroup, select, textarea {
+    border-radius: 0;
+  }
+
 .decoration-brand {
     text-decoration: underline;
     text-decoration-color: currentColor;
@@ -184,11 +188,6 @@ details > summary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1.25rem;
-
-    @media (min-width: 768px) {
-        padding: 1.25rem 1.5rem;
-    }
   }
   // Comp
   .c-btn {
@@ -204,6 +203,11 @@ details > summary {
     line-height: 1;
     font-size: clamp(0.5rem, 0.457rem + 0.22vw, 0.625rem);
     overflow: hidden;
+    padding: 1rem 1.25rem;
+
+    @media (min-width: 768px) {
+        padding: 1.25rem 1.5rem;
+    }
 
     position: relative;
     &:before {

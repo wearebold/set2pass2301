@@ -53,7 +53,7 @@
           </h2>
         </div>
         <div
-          class="c-stat__item  flex flex-row justify-center items-center gap-6 bg-white h-full w-full"
+          class="c-stat__item  flex flex-row justify-center items-center gap-6 bg-white h-full w-full lg:flex-row-reverse"
         >
           <div class="flex">
             <img

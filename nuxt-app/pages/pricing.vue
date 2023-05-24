@@ -2,7 +2,7 @@
     <article class="c-pricing text-center" style="padding-top: var(--space-5xl); padding-bottom: var(--space-3xl-5xl);">
         <div class="l-container">
             <h1 class="font-display text-h2 mt-0 mb-8">Our Pricing</h1>
-            <p class="text-base max-w-prose mx-auto whitespace-balance">We believe that quality driving education should be accessible to everyone. That's why we have designed our pricing structure to offer a range of options that fit various budgets and learning needs.</p>            
+            <p class="text-h5 max-w-prose mx-auto whitespace-balance">We believe that quality driving education should be accessible to everyone. That's why we have designed our pricing structure to offer a range of options that fit various budgets and learning needs.</p>            
 
 
             <!-- <img  class="mx-auto" src="~/assets/img/icon-road-cars.svg" alt="" width="450" loading="lazy" style="margin-top: var(--space-2xl);"/> -->
