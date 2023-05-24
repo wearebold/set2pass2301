@@ -14,13 +14,14 @@ export default defineNuxtConfig({
       prerender: {
         crawlLinks: true
       }     
-   },  
+   },     
    build: {
     transpile: ['gsap'],
    },
     modules: [
         '@nuxt/content',
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+        '@nuxtjs/color-mode'
     ],
     css: [
       '@/assets/scss/app.scss'

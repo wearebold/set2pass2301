@@ -4,7 +4,7 @@
 
         <Hero />
         <Stats />
-        
+
         <About />
 
         <Destinations />

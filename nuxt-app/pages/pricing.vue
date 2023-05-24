@@ -5,6 +5,7 @@
             <p class="text-h5 max-w-prose mx-auto whitespace-balance">We believe that quality driving education should be accessible to everyone. That's why we have designed our pricing structure to offer a range of options that fit various budgets and learning needs.</p>            
 
 
+            <img  class="mx-auto mt-16 mix-blend-soft-light" src="~/assets/img/icon-price.svg" alt="" width="250" loading="eager"/>
             <!-- <img  class="mx-auto" src="~/assets/img/icon-road-cars.svg" alt="" width="450" loading="lazy" style="margin-top: var(--space-2xl);"/> -->
 
             <div class="grid gap-6 grid-cols-1 md:grid-cols-3 md:gap-12" style="margin-top: var(--space-2xl); margin-bottom: var(--space-2xl);">
@@ -128,7 +129,7 @@
                         <p class="max-w-prose whitespace-balance">We are excited to be part of your journey and look forward to helping you achieve your driving goals. Let's get started on the road to becoming a confident and skilled driver together!</p>
                     </div>
                     <div>
-                        <img  class="mx-auto mt-16" src="~/assets/img/icon-path.svg" alt="" width="550" loading="lazy"/>
+                        <img  class="mx-auto mt-16 mix-blend-soft-light" src="~/assets/img/icon-path.svg" alt="" width="550" loading="lazy"/>
                     </div>
                 </div>
 

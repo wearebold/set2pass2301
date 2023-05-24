@@ -16,7 +16,7 @@
           <div class="">
                             
                     
-              <img  class="mx-auto mt-16" src="~/assets/img/icon-pass.svg" alt="" width="550" loading="lazy"/>
+              <img  class="mx-auto mt-16 mix-blend-soft-light" src="~/assets/img/icon-pass.svg" alt="" width="550" loading="eager"/>
 
           </div>                              
           </div>

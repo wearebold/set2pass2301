@@ -14,7 +14,7 @@
             </div>
             <div class="">
                 
-                <img  class="mx-auto" src="~/assets/img/icon-love.svg" alt="" width="250" loading="lazy"/>
+                <img  class="mx-auto mix-blend-soft-light" src="~/assets/img/icon-love.svg" alt="" width="250" loading="lazy"/>
 
             </div>                    
             </div>
