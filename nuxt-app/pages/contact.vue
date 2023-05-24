@@ -44,7 +44,7 @@
             </p>
           </div>
           <div class="">
-            <img  class="mx-auto mix-blend-soft-light" style="margin-bottom: var(--space-xl)" src="~/assets/img/icon-contact-form.svg" alt="" width="250" loading="eager"/>
+            <img  class="mx-auto " style="margin-bottom: var(--space-xl)" src="~/assets/img/icon-contact-form.svg" alt="" width="250" loading="eager"/>
             <!-- <img  class="mx-auto mt-16" src="~/assets/img/icon-pass.svg" alt="" width="550" loading="lazy"/> -->
             <form name="contact" action="/contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <p class="hidden">

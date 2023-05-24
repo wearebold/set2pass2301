@@ -8,20 +8,20 @@
                 <p class="max-w-prose whitespace-balance">Explore our services, instructors, and testimonials to understand what Set to Pass offers.</p>
                 <p class="max-w-prose whitespace-balance">Please familiarize yourself with the range of courses we provide and the benefits of learning with us. Take your time to gather all the information you need before moving on to the next step.</p>
                 <p class="max-w-prose whitespace-balance mb-auto">Once you have gathered all the necessary information, it's time to take the next step and get in touch with us.</p>
-                <img  class="mx-auto mt-16 mix-blend-soft-light" src="~/assets/img/icon-checks.svg" alt="" width="260" loading="lazy"/>
+                <img  class="mx-auto mt-16 " src="~/assets/img/icon-checks.svg" alt="" width="260" loading="lazy"/>
              </div>   
             <div class="flex flex-col">
                                 
                 <p class="max-w-prose whitespace-balance">You can reach out to us by calling our dedicated <NuxtLink to="07908248784" rel="tel" class="decoration-brand">phone line</NuxtLink>, where our friendly team will be ready to assist you.</p>
                 <p class="max-w-prose whitespace-balance mb-auto">Alternatively, you can fill out the <NuxtLink to="/contact" class="decoration-brand">contact form</NuxtLink> on our website, providing your name, email address, and any specific questions or requests you may have.</p>
-                <img  class="mx-auto mt-16 mix-blend-soft-light" src="~/assets/img/icon-chat.svg" alt="" width="255" loading="lazy"/>
+                <img  class="mx-auto mt-16 " src="~/assets/img/icon-chat.svg" alt="" width="255" loading="lazy"/>
 
             </div>                    
 
             <div class="flex flex-col">                
                 <p class="max-w-prose whitespace-balance">After you have contacted us, our team will promptly respond to your inquiry. We will provide you with further details, answer your questions, and discuss available options that align with your requirements. This will include scheduling your first driving lesson, providing information on course availability, and discussing any specific preferences you may have.</p>
                 <p class="max-w-prose whitespace-balance mb-auto">Once everything is set and confirmed, you're ready to go! You'll be on your way to becoming a confident and skilled driver with Set to Pass.</p>
-                <img  class="mx-auto mt-16 mix-blend-soft-light" src="~/assets/img/icon-calendar.svg" alt="" width="260" loading="lazy"/>                
+                <img  class="mx-auto mt-16 " src="~/assets/img/icon-calendar.svg" alt="" width="260" loading="lazy"/>                
             </div>
             </div>
             <div class="flex justify-center">
