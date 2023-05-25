@@ -6,7 +6,7 @@
             <div class="grid gap-6 grid-cols-1 md:grid-cols-3 md:gap-12">                        
              <div class="flex flex-col">
                 <p class="max-w-prose whitespace-balance">Explore our services, instructors, and testimonials to understand what Set to Pass offers.</p>
-                <p class="max-w-prose whitespace-balance">Please familiarize yourself with the range of courses we provide and the benefits of learning with us. Take your time to gather all the information you need before moving on to the next step.</p>
+                <p class="max-w-prose whitespace-balance">Please familiarise yourself with the range of courses we provide and the benefits of learning with us. Take your time to gather all the information you need before moving on to the next step.</p>
                 <p class="max-w-prose whitespace-balance mb-auto">Once you have gathered all the necessary information, it's time to take the next step and get in touch with us.</p>
                 <img  class="mx-auto mt-16 " src="~/assets/img/icon-checks.svg" alt="" width="260" loading="lazy"/>
              </div>   
@@ -25,7 +25,7 @@
             </div>
             </div>
             <div class="flex justify-center">
-            <nuxt-link to="/about" class="c-btn c-btn--primary |  mt-4 mx-auto" style="margin-top: var(--space-2xl);"><span class="relative z-1">Start Your journey</span></nuxt-link>
+            <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-4 mx-auto" style="margin-top: var(--space-2xl);"><span class="relative z-1">Start Your journey</span></nuxt-link>
             </div>
         </div>
     </article>
