@@ -32,7 +32,8 @@
                     
               <img  class="mx-auto mt-6 " src="~/assets/img/icon-pass.svg" alt="" width="550" height="417" loading="eager" style="margin-bottom: var(--space-xl);"/>
 
-              <p class="text-h5 max-w-prose whitespace-balance">Contact us today to book your first lesson and start your journey to becoming a safe and confident driver. We look forward to hearing from you!</p>
+              <p class="text-h5 max-w-prose mx-auto text-center whitespace-balance">Contact us today to book your first lesson and start your journey to becoming a safe and confident driver.</p>
+              <p class="text-h5 max-w-prose mx-auto text-center whitespace-balance">We look forward to hearing from you!</p>
               <div class="flex justify-center">
                 <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-4" style="margin-top: var(--space-xl);"><span class="relative z-1">Start Your journey</span></nuxt-link>
               </div>

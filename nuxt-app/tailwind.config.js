@@ -45,6 +45,10 @@ export default {
             colors: {
                 primary: defaultTheme.colors.green,
                 'orange-500': "rgba(246, 111, 37, 0.8)",
+            },
+            maxWidth: {
+                '120': '7.5rem',
+                '250': '15.625rem',
             }
         }
     },

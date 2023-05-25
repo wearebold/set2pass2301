@@ -1,5 +1,5 @@
 <template>
-    <article class="c-destinations text-center" style="padding-top: var(--space-3xl); padding-bottom: var(--space-3xl-5xl);">
+    <article class="c-destinations text-center" style="margin-top: var(--space-3xl); margin-bottom: var(--space-3xl-5xl);">
         <div class="l-container">
             <div class="relative">                                
             <h2 class="font-display text-h2 mt-0 mb-8">Our destinations</h2>
