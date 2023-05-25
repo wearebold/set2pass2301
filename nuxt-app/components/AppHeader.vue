@@ -58,7 +58,7 @@
           <nuxt-link to="/pricing" @click="clearState" class="text-xs mx-4"
             >Pricing</nuxt-link
           >
-          <nuxt-link to="/faqs" @click="clearState" class="text-xs mx-4"
+          <nuxt-link to="/faqs" @click="clearState" class="text-xs mx-4" aria-label="Frequently Asked Questions"
             >FAQ's</nuxt-link
           >
           <nuxt-link
