@@ -37,6 +37,9 @@ export default defineNuxtConfig({
     // },  
     app: {
         head: {
+            htmlAttrs: {
+                lang: 'en',
+            },
             meta: [
                 // <meta name="viewport" content="width=device-width, initial-scale=1">
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -47,6 +50,7 @@ export default defineNuxtConfig({
             ],
             link: [
                 // <link rel="stylesheet" href="https://myawesome-lib.css">
+                { rel: 'preload', href: 'https://use.typekit.net/zix8cwn.css', as: 'style'},
                 { rel: 'stylesheet', href: 'https://use.typekit.net/zix8cwn.css' }
             ],
         }

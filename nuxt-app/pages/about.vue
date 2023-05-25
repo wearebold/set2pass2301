@@ -20,7 +20,7 @@
           <div class="">
                             
                     
-              <img  class="mx-auto mt-16 " src="~/assets/img/icon-pass.svg" alt="" width="550" loading="eager"/>
+              <img  class="mx-auto mt-16 " src="~/assets/img/icon-pass.svg" alt="" width="550" height="417" loading="eager"/>
 
           </div>                              
           </div>

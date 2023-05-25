@@ -14,7 +14,7 @@
             </div>
             <div class="">
                 
-                <img  class="mx-auto " src="~/assets/img/icon-love.svg" alt="" width="250" loading="lazy"/>
+                <img  class="mx-auto " src="~/assets/img/icon-love.svg" alt="" width="250" height="432" loading="lazy"/>
 
             </div>                    
             </div>

@@ -10,7 +10,7 @@
                 <nuxt-link to="/contact" class="c-btn c-btn--primary |  my-2"><span class="relative z-1">Get In Touch</span></nuxt-link>
             </div>
             <div class="order-first md:order-last">
-                <img class="" src="~/assets/img/icon-car.svg" alt="" width="600" lazy="eager"/>
+                <img class="" src="~/assets/img/icon-car.svg" alt="" width="596" height="280" lazy="eager"/>
             </div>
         </div>
     </article>

@@ -20,7 +20,7 @@
         <h2 class="font-bold text-5xl mt-5 tracking-tight">FAQ</h2>
         <p class="text-neutral-500 text-xl mt-3">Frequenty asked questions</p>
       </div> -->
-      <img  class="mx-auto mt-16 " src="~/assets/img/icon-faqs.svg" alt="" width="250" loading="lazy"/>
+      <img  class="mx-auto mt-16 " src="~/assets/img/icon-faqs.svg" alt="" width="250" height="193" loading="eager"/>
 
       <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto" style="margin-top: var(--space-xl);">
         <div class="py-5">

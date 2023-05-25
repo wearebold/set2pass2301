@@ -7,7 +7,7 @@
             </div>
 
 
-            <img  class="mx-auto " src="~/assets/img/icon-road-cars.svg" alt="" width="450" loading="lazy" style="margin-top: var(--space-2xl);"/>
+            <img  class="mx-auto " src="~/assets/img/icon-road-cars.svg" alt="" width="450" height="376" loading="lazy" style="margin-top: var(--space-2xl);"/>
 
             <ul class="text-base justify-center text-center font-display w-full flex flex-wrap gap-6 my-6" style="margin-top: var(--space-2xl);">
                 <li>Ellesmere</li>
