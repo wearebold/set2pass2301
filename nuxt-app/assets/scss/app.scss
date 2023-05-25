@@ -102,6 +102,10 @@ a {
     transition: color 0.2s ease-in-out;
 }
 
+.router-link-exact-active {
+    color: var(--brand-orange);
+}
+
 details > summary {
     list-style: none;
   }

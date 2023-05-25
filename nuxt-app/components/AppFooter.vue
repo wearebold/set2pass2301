@@ -7,6 +7,7 @@
                     src="/svg/logo-white.svg"
                     alt="Set To Pass - Driving School Logo"
                     width="160"
+                    height="12"
                     loading="lazy"
                 />
                 </nuxt-link>
@@ -15,7 +16,7 @@
                 <h2 class="f-caps">MENU</h2>
                 <ul>
                     <li>
-                        <NuxtLink to="/about">About</NuxtLink>
+                        <NuxtLink to="/about">About Us</NuxtLink>
                     </li>
                     <li>
                         <NuxtLink to="/stories">Stories</NuxtLink>
