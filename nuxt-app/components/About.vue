@@ -1,6 +1,6 @@
 <template>
     <div>
-    <article class="c-about" style="margin-top: var(--space-3xl-5xl); margin-bottom: var(--space-3xl-5xl);">
+    <article class="c-about" style="margin-top: var(--space-3xl-5xl); padding-bottom: var(--space-3xl-5xl);">
         <div class="l-container">
             <h2 class="font-display text-h2 mt-0">About Us</h2>
             <div class="grid gap-12 grid-cols-1 md:grid-cols-2">
