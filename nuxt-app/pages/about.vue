@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+        <Title>About Set to Pass - Driving School in Shrewsbury Committed to Your Success</Title>
+        <Meta name="description" content="Learn more about Set to Pass, a dedicated driving school located in Shrewsbury. Our mission is to help learners become confident and safe drivers through our comprehensive driving lessons. With experienced instructors and a personalized approach, we tailor our lessons to your specific needs. Discover why Set to Pass is the right choice for your driving education journey in Shrewsbury."/>
+    </Head>
   <article class="c-about" style="padding-top: var(--space-5xl); padding-bottom: var(--space-3xl-5xl);">
       <div class="l-container">
           <h1 class="font-display text-h2 mt-0 mb-8">About Us</h1>

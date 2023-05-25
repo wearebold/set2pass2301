@@ -1,4 +1,8 @@
 <template>
+        <Head>
+        <Title>Frequently Asked Questions - Set to Pass Driving School</Title>
+        <Meta name="description" content="Find answers to your frequently asked questions about Set to Pass, a leading driving school in Shrewsbury. Get valuable information about our driving lessons, instructors, and more. Browse through our FAQs page to address any queries you may have and gain a deeper understanding of our commitment to your driving success."/>
+    </Head>
   <article
     class="c-faqs"
     style="padding-top: var(--space-5xl); padding-bottom: var(--space-3xl-5xl)"

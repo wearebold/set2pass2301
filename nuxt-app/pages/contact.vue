@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+        <Title>Contact Set to Pass - Get in Touch for Expert Driving Instruction</Title>
+        <Meta name="description" content="Contact Set to Pass, a trusted driving school, for professional driving instruction tailored to your needs. Whether you have questions, want to book lessons, or require further information, our friendly team in Shrewsbury is here to assist you. Reach out to us today and take the first step towards becoming a confident and skilled driver with Set to Pass."/>
+    </Head>
     <article
       class="c-contact"
       style="

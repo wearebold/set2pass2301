@@ -1,4 +1,9 @@
 <template>
+    <div>
+    <Head>
+        <Title>Driving Lesson Pricing - Set to Pass Driving School</Title>
+        <Meta name="description" content="Discover the competitive rates and flexible lesson plans offered by Set to Pass, a trusted driving school in Shrewsbury. Choose a package that suits your budget and needs, and start your journey towards becoming a confident driver."/>
+    </Head>
     <article class="c-pricing text-center" style="padding-top: var(--space-5xl); padding-bottom: var(--space-3xl-5xl);">
         <div class="l-container">
             <h1 class="font-display text-h2 mt-0 mb-8">Our Pricing</h1>
@@ -138,6 +143,7 @@
             
         </div>
     </article>
+    </div>
 </template>
 <style scoped lang="scss">
 .c-pricing {

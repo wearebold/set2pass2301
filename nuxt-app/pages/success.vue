@@ -1,5 +1,8 @@
 <template>
     <div>
+    <Head>
+    <Title>Success - Email sent</Title>
+</Head>
       <article
         class="c-contact"
         style="
