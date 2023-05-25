@@ -12,15 +12,30 @@
               <p class="text-h5 max-w-prose whitespace-balance">At Set to Pass, we understand that learning to drive can be a daunting experience. That's why we provide a friendly and supportive learning environment where you can feel comfortable and confident behind the wheel.</p>
               <p class="max-w-prose whitespace-balance">Our instructors are patient and understanding and will help you gradually build your confidence and skills to become a safe and competent driver.</p>
               <p class="max-w-prose whitespace-balance">We also understand the importance of affordability, so we offer competitive prices for all our courses. Everyone should have access to high-quality driving lessons, regardless of their budget.</p>
-              <p class="max-w-prose whitespace-balance">So why choose Set to Pass? We have a proven track record of success, with a high pass rate and many satisfied customers. We are committed to providing you with the best possible learning experience and helping you achieve your driving goals. With Set to Pass, you can be confident that you are safe.</p>
+              <p class="max-w-prose whitespace-balance">So why choose Set to Pass?</p>
 
-              <p class="max-w-prose whitespace-balance">Contact us today to book your first lesson and start your journey to becoming a safe and confident driver. We look forward to hearing from you!</p>
-              <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-4" style="margin-top: var(--space-xl);"><span class="relative z-1">Start Your journey</span></nuxt-link>
+              <ul class="list-disc my-6 ml-6">
+                <li class="mb-2 text-base">ADI (Approved Driving Instructor) for Manual Transmission. </li>                                 
+                <li class="mb-2 text-base">Carefully Planned Lessons Tailored To Your Exact Needs</li>
+                <li class="mb-2 text-base">Calm, Patient Instructor - Specialist with Nervous Pupils</li>
+                <li class="mb-2 text-base">No Group Lessons: All Tuition is One to One </li>
+                <li class="mb-2 text-base">Learn at Your Own Pace, with Lesson Times that Suit You if diary allows Qualified to give Advanced Lessons - 'Pass Plus' Certification. </li>
+                <li class="mb-2 text-base">One Instructor, One Car - for Every Lesson </li>
+                <li class="mb-2 text-base">Dedicated Motorway Lessons Available Driving School </li>
+                <li class="mb-2 text-base">Enhanced DBS checked</li>
+              </ul>
+
+              <p class="max-w-prose whitespace-balance">We have a proven track record of success, with a high pass rate and many satisfied customers. We are committed to providing you with the best possible learning experience and helping you achieve your driving goals. With Set to Pass, you can be confident that you are safe.</p>
            </div>   
           <div class="">
                             
                     
-              <img  class="mx-auto mt-16 " src="~/assets/img/icon-pass.svg" alt="" width="550" height="417" loading="eager"/>
+              <img  class="mx-auto mt-6 " src="~/assets/img/icon-pass.svg" alt="" width="550" height="417" loading="eager" style="margin-bottom: var(--space-xl);"/>
+
+              <p class="text-h5 max-w-prose whitespace-balance">Contact us today to book your first lesson and start your journey to becoming a safe and confident driver. We look forward to hearing from you!</p>
+              <div class="flex justify-center">
+                <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-4" style="margin-top: var(--space-xl);"><span class="relative z-1">Start Your journey</span></nuxt-link>
+              </div>
 
           </div>                              
           </div>
