@@ -46,7 +46,7 @@
           <div class="">
             <img  class="mx-auto " style="margin-bottom: var(--space-xl)" src="~/assets/img/icon-contact-form.svg" alt="" width="250" loading="eager"/>
             <!-- <img  class="mx-auto mt-16" src="~/assets/img/icon-pass.svg" alt="" width="550" loading="lazy"/> -->
-            <form name="contact" action="/contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="contact" action="/success" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                 <p class="hidden">
                     <label>
                     Don’t fill this out if you’re human: <input name="bot-field" />

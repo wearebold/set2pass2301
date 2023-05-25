@@ -7,7 +7,7 @@
                     <span class="sr-only">with Set To Pass Driving school</span>
                 </h1>
                 <p class="max-w-prose whitespace-balance md:text-h5">We are an independent driving school based in Shrewsbury and the surrounding area. Providing driving lessons and intensive courses in a dual-controlled manual car.</p>
-                <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-2 ml-auto"><span class="relative z-1">Get In Touch</span></nuxt-link>
+                <nuxt-link to="/contact" class="c-btn c-btn--primary |  my-2"><span class="relative z-1">Get In Touch</span></nuxt-link>
             </div>
             <div class="order-first md:order-last">
                 <img class="" src="~/assets/img/icon-car.svg" alt="" width="600" lazy="eager"/>
@@ -17,9 +17,8 @@
 </template>
 <style scoped lang="scss">
 .c-hero {
-    min-height: fit-content;
-    height: 90vh;
-    height: 90svh;
+    min-height: 90vh;
+    min-height: 90svh;
     // background-color: black;
     // color: white;
     // background: linear-gradient(180deg, rgb(99.608% 99.608% 99.608%) 0%, rgb(99.573% 99.573% 99.573%) 6.25%, rgb(99.334% 99.328% 99.324%) 12.5%, rgb(98.702% 98.659% 98.632%) 18.75%, rgb(97.541% 97.34% 97.214%) 25%, rgb(95.831% 95.119% 94.672%) 31.25%, rgb(93.751% 91.699% 90.41%) 37.5%, rgb(91.79% 86.71% 83.519%) 43.75%, rgb(90.882% 79.684% 72.647%) 50%, rgb(91.919% 72.213% 59.831%) 56.25%, rgb(93.978% 66.307% 48.921%) 62.5%, rgb(96.128% 61.921% 40.428%) 68.75%, rgb(97.884% 58.909% 34.419%) 75%, rgb(99.074% 57.053% 30.652%) 81.25%, rgb(99.72% 56.093% 28.68%) 87.5%, rgb(99.965% 55.737% 27.948%) 93.75%, rgb(100% 55.686% 27.843%) 100% );
