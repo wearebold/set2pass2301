@@ -56,6 +56,9 @@
             <img  class="mx-auto " style="margin-bottom: var(--space-xl)" src="~/assets/img/icon-contact-form.svg" alt="" width="250" height="205" loading="eager"/>
             <!-- <img  class="mx-auto mt-16" src="~/assets/img/icon-pass.svg" alt="" width="550" loading="lazy"/> -->
             <form name="contact" action="/success" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <div data-enquiry-type class="text-h5 bold sr-only">
+                  {{ cleanedHashValue }}
+                </div>
                 <p class="hidden">
                     <label>
                     Don’t fill this out if you’re human: <input name="bot-field" />
@@ -160,7 +163,24 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const hashValue = ref('');
+const cleanedHashValue = ref('');
+
+onMounted(() => {
+// Extract hash value from the URL
+const hash = window.location.hash;
+
+// Remove the "#" character from the hash value
+hashValue.value = hash.slice(1);
+
+// Remove hyphens from the hash value
+cleanedHashValue.value = hashValue.value.replace(/-/g, '  '); // This removes all hyphens
+});
+
+</script>
 
 <style lang="scss" scoped>
 .c-contact {
