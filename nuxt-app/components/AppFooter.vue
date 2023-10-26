@@ -80,8 +80,17 @@
             </div>
         </div>
         <div class="w-full h-px bg-white mt-8"></div>
-        <div class="l-container">
-            <small class="block py-8">&copy; 2023 Set to Pass. All rights reserved.</small>
+        <div class="l-container l-container--1440">
+            <small class="block py-8">&copy; {{ currentYear }} Set to Pass. All rights reserved.</small>
         </div>
     </footer>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      currentYear: new Date().getFullYear(),
+    };
+  },
+};
+</script>
