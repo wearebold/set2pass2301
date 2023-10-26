@@ -167,6 +167,9 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 const hashValue = ref('');
 const cleanedHashValue = ref('');
@@ -196,7 +199,7 @@ const handleSubmit = (event) => {
     .then(() => {
       // Use the `router` from the setup context to navigate
       // to the thank-you page.
-      $router.push("/success/");
+      router.push("/success/");
     })
     .catch((error) => alert(error));
 };
