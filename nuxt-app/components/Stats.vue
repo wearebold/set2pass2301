@@ -84,7 +84,7 @@
           </div>
           <div>
             <h2 class="f-stat m-0">
-              <span class="text-h5 block">38+</span>
+              <span class="text-h5 block">Stories</span>
               <span class="font-body text-xs text-gray-500 | md:text-sm">5 star reviews</span>
             </h2>
           </div>

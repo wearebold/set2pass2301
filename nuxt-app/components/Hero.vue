@@ -7,7 +7,7 @@
                     <span class="sr-only">with Set To Pass Driving school</span>
                 </h1>
                 <p class="max-w-prose whitespace-balance md:text-h5">We are an independent driving school based in Shrewsbury and the surrounding area. Providing driving lessons and intensive courses in a dual-controlled manual car.</p>
-                <nuxt-link to="/contact" class="c-btn c-btn--primary |  my-2"><span class="relative z-1">Get In Touch</span></nuxt-link>
+                <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-8 mb-2"><span class="relative z-1">Get In Touch</span></nuxt-link>
             </div>
             <div class="order-first md:order-last">
                 <img class="" src="~/assets/img/icon-car.svg" alt="" width="596" height="280" lazy="eager"/>
@@ -44,9 +44,9 @@
     );
     // background: linear-gradient(180deg, #FFFFFF 0%, oklch(0.73 0.22 42.13) 100%);
 
-    // @media screen and (min-width: 768px) {
-    //     height: 80vh;
-    //     height: 80svh;
-    // }
+    @media screen and (min-width: 768px) {
+        min-height: 60vh;
+        min-height: 60svh;
+    }
 }
 </style>

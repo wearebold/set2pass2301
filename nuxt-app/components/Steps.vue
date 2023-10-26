@@ -7,7 +7,7 @@
         <div
           class="c-stat__item flex flex-row items-center gap-3 p-6 bg-white h-full w-full | lg:justify-center"
         >
-          <span class="font-display text-h4 md:text-h3" aria-hidden="true">1.</span>
+          <span class="font-display" style="font-size: 3.3rem;" aria-hidden="true">1.</span>
           <div>
             <h2 class="f-stat m-0">
               <span class="text-h5 block">Ready</span>
@@ -19,7 +19,7 @@
         <div
           class="c-stat__item flex flex-row items-center gap-3 p-6 bg-white h-full w-full | lg:justify-center"
         >
-          <span class="font-display text-h4 md:text-h3" aria-hidden="true">2.</span>
+        <span class="font-display" style="font-size: 3.3rem;" aria-hidden="true">2.</span>
           <div>
             <h2 class="f-stat m-0">
               <span class="text-h5 block">Set</span>
@@ -31,7 +31,7 @@
         <div
           class="c-stat__item flex flex-row items-center gap-3 p-6 bg-white h-full w-full | lg:justify-center"
         >
-          <span class="font-display text-h4 md:text-h3" aria-hidden="true">3.</span>
+        <span class="font-display" style="font-size: 3.3rem;" aria-hidden="true">3.</span>
           <div>
             <h2 class="f-stat m-0">
               <span class="text-h5 block">Go</span>
