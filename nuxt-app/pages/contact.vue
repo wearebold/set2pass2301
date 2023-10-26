@@ -55,7 +55,9 @@
           <div class="">
             <img  class="mx-auto " style="margin-bottom: var(--space-xl)" src="~/assets/img/icon-contact-form.svg" alt="" width="250" height="205" loading="eager"/>
             <!-- <img  class="mx-auto mt-16" src="~/assets/img/icon-pass.svg" alt="" width="550" loading="lazy"/> -->
-            <form name="contact" action="/success" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="set-to-pass-contact-form" action="/" method="POST" data-netlify="true" netlify-honeypot="bot-field" v-on:submit="handleSubmit">
+              <input type="hidden" name="form-name" value="set-to-pass-contact-form" />
+
                 <div data-enquiry-type class="text-h5 bold sr-only">
                   {{ cleanedHashValue }}
                 </div>
@@ -179,6 +181,25 @@ hashValue.value = hash.slice(1);
 // Remove hyphens from the hash value
 cleanedHashValue.value = hashValue.value.replace(/-/g, '  '); // This removes all hyphens
 });
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => {
+      // Use the `router` from the setup context to navigate
+      // to the thank-you page.
+      $router.push("/success/");
+    })
+    .catch((error) => alert(error));
+};
 
 </script>
 
