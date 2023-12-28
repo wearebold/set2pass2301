@@ -54,7 +54,7 @@
                         <NuxtLink to="07908248784" rel="tel">Telephone</NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="mailto:hello@settopass.co.uk">Email</NuxtLink>
+                        <NuxtLink to="mailto:sharon@settopass.co.uk">Email</NuxtLink>
                     </li>
                 </ul>
             </div>

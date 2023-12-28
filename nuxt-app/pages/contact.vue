@@ -49,7 +49,7 @@
 
             <div style="margin-top: var(--space-xl)">
                 <NuxtLink to="07908248784" rel="tel" class="font-display text-h5 block mb-2">+44 7908248784</NuxtLink>
-                <NuxtLink to="mailto:hello@settopass.co.uk" class="font-display text-h5 block">hello@settopass.co.uk</NuxtLink>
+                <NuxtLink to="mailto:sharon@settopass.co.uk" class="font-display text-h5 block">sharon@settopass.co.uk</NuxtLink>
             </div>
           </div>
           <div class="">
