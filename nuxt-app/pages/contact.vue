@@ -64,9 +64,9 @@
                 </p>
                 <div data-enquiry-type class="text-h5 bold sr-only">
                   {{ cleanedHashValue }}
-                </div>
-                <input type="hidden" name="service" data-remove-prefix value="{{ cleanedHashValue }}" />
-                <input type="hidden" name="subject" data-remove-prefix value="New enquiry from Set To Pass Contant From :: {{ cleanedHashValue }}" />
+                </div>                
+                <input type="hidden" name="subject" data-remove-prefix :value="'New enquiry from Set To Pass Contant From ::' cleanedHashValue" />
+                <input type="hidden" name="service" data-remove-prefix :value="cleanedHashValue" />
 
               <div class="grid md:grid-cols-2 md:gap-6">
                 <div class="relative z-0 w-full mb-6 group">
