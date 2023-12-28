@@ -55,18 +55,19 @@
           <div class="">
             <img  class="mx-auto " style="margin-bottom: var(--space-xl)" src="~/assets/img/icon-contact-form.svg" alt="" width="250" height="205" loading="eager"/>
             <!-- <img  class="mx-auto mt-16" src="~/assets/img/icon-pass.svg" alt="" width="550" loading="lazy"/> -->
-            <form name="set-to-pass-contact-form" action="/" method="POST" data-netlify="true" netlify-honeypot="bot-field" v-on:submit="handleSubmit">
+            <form name="set-to-pass-contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" v-on:submit="handleSubmit">
               <input type="hidden" name="form-name" value="set-to-pass-contact-form" />
-
-                <div data-enquiry-type class="text-h5 bold sr-only">
-                  {{ cleanedHashValue }}
-                </div>
-                <p class="hidden">
+              <p class="hidden">
                     <label>
                     Don’t fill this out if you’re human: <input name="bot-field" />
                     </label>
                 </p>
-                <input type="hidden" name="subject" data-remove-prefix value="New enquiry from %{formName} (%{submissionId})" />
+                <div data-enquiry-type class="text-h5 bold sr-only">
+                  {{ cleanedHashValue }}
+                </div>
+                <input type="hidden" name="service" data-remove-prefix value="{{ cleanedHashValue }}" />
+                <input type="hidden" name="subject" data-remove-prefix value="New enquiry from Set To Pass Contant From :: {{ cleanedHashValue }}" />
+
               <div class="grid md:grid-cols-2 md:gap-6">
                 <div class="relative z-0 w-full mb-6 group">
                   <input
