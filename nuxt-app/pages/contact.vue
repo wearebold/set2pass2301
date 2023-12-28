@@ -63,11 +63,11 @@
                     </label>
                 </p>
                 <div data-enquiry-type class="text-h5 bold sr-only">
-                  {{ cleanedHashValue }}
+                  {{ submissionId }}
                 </div>                
-                
-                <input type="hidden" name="subject" :value="'New enquiry from Set To Pass Contact Form :: ' + cleanedHashValue" />
-                <input type="hidden" name="service" :value="cleanedHashValue" />
+
+                <input type="hidden" name="subject" :value="'New enquiry from Set To Pass Contact Form :: ' + submissionId" />
+                <input type="hidden" name="service" :value="submissionId" />
 
               <div class="grid md:grid-cols-2 md:gap-6">
                 <div class="relative z-0 w-full mb-6 group">
@@ -133,6 +133,24 @@
                   >
                 </div>
               </div>
+              <div class="grid md:gap-6" v-if="submissionId">
+                <div class="relative z-0 w-full mb-6 group">
+                  <input
+                    type="text"
+                    name="enqiury_type"
+                    id="enqiury_type"
+                    class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-800 appearance-none focus:outline-none focus:ring-0 focus:border-black peer"
+                    placeholder=" "
+                    required
+                    :value="submissionId"
+                  />
+                  <label
+                    for="enqiury_type"
+                    class="peer-focus:font-medium absolute text-sm text-gray-800 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                    >Enqiury</label
+                  >
+                </div>
+              </div>
               <div class="grid md:gap-6">
                 <div class="relative z-0 w-full mb-6 group">
                   <textarea
@@ -174,7 +192,7 @@ import { useRouter } from 'vue-router';
 const router = useRouter();
 
 const hashValue = ref('');
-const cleanedHashValue = ref('');
+const submissionId = ref('');
 
 onMounted(() => {
 // Extract hash value from the URL
@@ -184,7 +202,7 @@ const hash = window.location.hash;
 hashValue.value = hash.slice(1);
 
 // Remove hyphens from the hash value
-cleanedHashValue.value = hashValue.value.replace(/-/g, '  '); // This removes all hyphens
+submissionId.value = hashValue.value.replace(/-/g, ' '); // This removes all hyphens
 });
 
 const handleSubmit = (event) => {
@@ -192,6 +210,11 @@ const handleSubmit = (event) => {
 
   const myForm = event.target;
   const formData = new FormData(myForm);
+
+  // Iterating over formData entries
+  // for (let [key, value] of formData.entries()) {
+  //   console.log(key, value);
+  // }
 
   fetch("/", {
     method: "POST",
