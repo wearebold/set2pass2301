@@ -50,50 +50,7 @@
         <div
           class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-12"
           style="margin-top: var(--space-2xl); margin-bottom: var(--space-2xl)"
-        >
-          <section
-            class="flex flex-col w-full max-w-sm mx-auto p-4 bg-white border border-black shadow sm:p-8 md:max-w-none"
-          >
-            <h5 class="mb-4 text-xl text-left font-display mt-0">
-              Single Lesson
-            </h5>
-            <div class="flex items-baseline text-gray-900 dark:text-white">
-              <span class="text-3xl font-display">£</span>
-              <span class="text-h3 font-display tracking-tight">40</span>
-              <span class="ml-1 text-xl font-normal text-gray-500"
-                >/per hour</span
-              >
-            </div>
-            <!-- List -->
-            <ul role="list" class="space-y-5 mt-7 mb-auto">
-              <li class="flex space-x-3">
-                <!-- Icon -->
-                <svg
-                  aria-hidden="true"
-                  class="flex-shrink-0 w-6 h-6 text-orange-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <title>Check icon</title>
-                  <path
-                    fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-                <span class="text-base font-normal leading-tight text-gray-500"
-                  >1 hour</span
-                >
-              </li>
-            </ul>
-            <nuxt-link
-              to="/contact#enquiry-single-lesson"
-              class="c-btn c-btn--primary c-btn--orange | py-5 px-5 mt-4 ml-auto w-full"
-              style="margin-top: var(--space-xl)"
-              ><span class="relative z-1">Enquiry Now</span></nuxt-link
-            >
-          </section>
+        >          
 
           <section
             class="flex flex-col w-full max-w-sm mx-auto p-4 bg-white border border-black shadow sm:p-8 md:max-w-none"
@@ -103,9 +60,18 @@
             </h5>
             <div class="flex items-baseline text-gray-900 dark:text-white">
               <span class="text-3xl font-display">£</span>
-              <span class="text-h3 font-display tracking-tight">340</span>
+              <span class="text-h3 font-display tracking-tight">400</span>
               <span class="ml-1 text-xl font-normal text-gray-500">/total</span>
             </div>
+            <h6 class="text-xs m-0 p-0 text-left">Manual driving lessons</h6>
+            <div class="h-px w-full bg-gray-200 my-4"></div>
+            <div class="flex items-baseline text-gray-900 dark:text-white">
+              <span class="text-3xl font-display">£</span>
+              <span class="text-h3 font-display tracking-tight">450</span>
+              <span class="ml-1 text-xl font-normal text-gray-500">/total</span>
+            </div>
+            <h6 class="text-xs m-0 p-0 text-left">Automatic driving lessons</h6>
+            <div class="h-px w-full bg-gray-200 my-4"></div>
             <!-- List -->
             <ul role="list" class="space-y-5 mt-7 mb-auto">
               <li class="flex space-x-3">
@@ -223,7 +189,7 @@
             <h5 class="mb-4 text-xl text-left font-display mt-0">Pass Plus</h5>
             <div class="flex items-baseline text-gray-900 dark:text-white">
               <span class="text-3xl font-display">£</span>
-              <span class="text-h3 font-display tracking-tight">400</span>
+              <span class="text-h3 font-display tracking-tight">450</span>
               <span class="ml-1 text-xl font-normal text-gray-500">/total</span>
             </div>
             <!-- List -->

@@ -2,26 +2,69 @@
     <article class="c-destinations text-center" style="padding-bottom: var(--space-3xl-5xl);">
         <div class="l-container">
             <div class="relative">                                
-            <h2 class="font-display text-h2 mt-0 mb-8">Our destinations</h2>
-            <p class="text-h5 max-w-prose mx-auto whitespace-balance">If you're looking for a reliable and experienced driving instructor in and around Shrewsbury, Shropshire, look no further.</p>
+            <h2 ref="heading" class="font-display text-h2 mt-0 mb-8">Our destinations</h2>
+            <p ref="paragraph" class="text-h5 max-w-prose mx-auto whitespace-balance">If you're looking for a reliable and experienced driving instructor in and around Shrewsbury, Shropshire, look no further.</p>
             </div>
 
 
-            <img  class="mx-auto " src="~/assets/img/icon-road-cars.svg" alt="" width="450" height="376" loading="lazy" style="margin-top: var(--space-2xl);"/>
+            <img ref="image" class="mx-auto " src="~/assets/img/icon-road-cars.svg" alt="" width="450" height="376" loading="lazy" style="margin-top: var(--space-2xl);"/>
 
             <ul class="text-base justify-center text-center font-display w-full flex flex-wrap gap-6 my-6" style="margin-top: var(--space-2xl);">
-                <li>Ellesmere</li>
-                <li class="font-semibold">Oswestry</li>
-                <li>Bridgnorth</li>
-                <li class="font-semibold">Whitchurch</li>
-                <li>Telford</li>
-                <li class="font-semibold">Shrewsbury</li>
-                <li>Wem</li>
+                <li ref="location1">Ellesmere</li>
+                <li ref="location2" class="font-semibold">Oswestry</li>
+                <li ref="location3">Bridgnorth</li>
+                <li ref="location4" class="font-semibold">Whitchurch</li>
+                <li ref="location5">Telford</li>
+                <li ref="location6" class="font-semibold">Shrewsbury</li>
+                <li ref="location7">Wem</li>
             </ul>
+            <div ref="button">
             <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-4 ml-auto" style="margin-top: var(--space-xl);"><span class="relative z-1">Get In Touch</span></nuxt-link>
+            </div>  
         </div>
     </article>
 </template>
+<script setup>
+const { slideInFromLeft, fadeInUp } = useTextAnimations()
+const location1 = ref(null)
+const location2 = ref(null)
+const location3 = ref(null)
+const location4 = ref(null)
+const location5 = ref(null)
+const location6 = ref(null)
+const location7 = ref(null)
+
+const heading = ref(null)
+const paragraph = ref(null)
+const image = ref(null)
+const button = ref(null)
+
+onMounted(() => {
+
+    fadeInUp(heading.value, 0.2)
+    fadeInUp(paragraph.value, 0.4)
+    fadeInUp(image.value, 0.3)  
+    fadeInUp(button.value, 0.6)
+
+  // Animate heading
+  slideInFromLeft(location1.value, 0.2)
+  slideInFromLeft(location2.value, 0.3)
+  slideInFromLeft(location3.value, 0.4)
+  slideInFromLeft(location4.value, 0.5)
+  slideInFromLeft(location5.value, 0.6)
+  slideInFromLeft(location6.value, 0.7)
+  slideInFromLeft(location7.value, 0.8)
+  
+//   // Animate paragraph
+//   fadeInUp(paragraph.value, 0.4)
+  
+//   // Animate button
+//   fadeInUp(button.value, 0.6)
+  
+//   // Animate image
+//   fadeInUp(image.value, 0.3)
+})
+</script>
 <style scoped lang="scss">
 .c-destinations {
     background:

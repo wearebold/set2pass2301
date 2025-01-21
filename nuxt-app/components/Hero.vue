@@ -2,15 +2,17 @@
     <article class="c-hero flex flex-col justify-center pt-14">
         <div class="l-container grid gap-12 items-end grid-cols-1 md:grid-cols-2">
             <div>
-                <h1 class="font-display text-h1">
+                <h1 ref="heading" class="font-display text-h1">
                     Start learning today<span aria-hidden="true">...</span> 
                     <span class="sr-only">with Set To Pass Driving school</span>
                 </h1>
-                <p class="max-w-prose whitespace-balance md:text-h5">We are an independent driving school based in Shrewsbury and the surrounding area. Providing driving lessons and intensive courses in a dual-controlled manual car.</p>
-                <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-8 mb-2"><span class="relative z-1">Get In Touch</span></nuxt-link>
+                <p ref="paragraph" class="max-w-prose whitespace-balance md:text-h5">We are an independent driving school based in Shrewsbury and the surrounding area. Providing driving lessons and intensive courses in a dual-controlled manual car.</p>
+                <div ref="button">
+                    <nuxt-link to="/contact" class="c-btn c-btn--primary |  mt-8 mb-2"><span class="relative z-1">Get In Touch</span></nuxt-link>
+                </div>
             </div>
             <div class="order-first md:order-last">
-                <img class="" src="~/assets/img/icon-car.svg" alt="" width="596" height="280" lazy="eager"/>
+                <img ref="image" class="" src="~/assets/img/icon-car.svg" alt="" width="596" height="280" lazy="eager"/>
             </div>
         </div>
     </article>
@@ -50,3 +52,26 @@
     }
 }
 </style>
+<script setup>
+import { onMounted, ref } from 'vue'
+const { fadeInUp, slideInFromLeft } = useTextAnimations()
+
+const heading = ref(null)
+const paragraph = ref(null)
+const button = ref(null)
+const image = ref(null)
+
+onMounted(() => {
+  // Animate heading
+  fadeInUp(heading.value, 0.2)
+  
+  // Animate paragraph
+  fadeInUp(paragraph.value, 0.4)
+  
+  // Animate button
+  fadeInUp(button.value, 0.6)
+  
+  // Animate image
+  fadeInUp(image.value, 0.3)
+})
+</script>
